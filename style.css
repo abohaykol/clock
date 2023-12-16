@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: blueviolet;
+  --color-secondary: rgb(255, 255, 255);
+}
+.darktheme {
+  --color-primary: black;
+  --color-secondary: blueviolet;
+}
+.changeColor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: blueviolet;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+.darktheme .changeColor {
+  color: white;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: var(--color-secondary);
+}
+.center {
+  text-align: center;
+}
+.clock {
+  font-family: "starlight";
+  font-weight: bold;
+  color: var(--color-primary);
+  font-size: 150px;
+}
+
+.font-size {
+  font-size: 50px;
+}
